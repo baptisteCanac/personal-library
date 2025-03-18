@@ -21,7 +21,7 @@ class LibraryManager:
         title = input('Enter the title of the book: ')
         author = input('Enter the author of the book: ')
         year = input('Enter the year of the book: ')
-        genre = input('Enter the genere of the book: ')
+        genre = input('Enter the genre of the book: ')
         read = input('Have you read the book? (yes/no): ').lower() == 'yes'
 
         new_book = {
@@ -39,9 +39,9 @@ class LibraryManager:
         print("-----------------")
     
     def remove_book(self):
-        title = input("Enter the title book to remove from the library ")
+        title = input("Enter the title book to remove from the library ").strip().lower()
         initial_length = len(self.library)
-        self.library[:] = [book for book in self.library if book['title'].lower() != title]
+        self.library = [book for book in self.library if book['title'].strip().lower() != title]
 
         if len(self.library) < initial_length:
             self.save_library()
