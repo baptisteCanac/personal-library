@@ -1,1 +1,1 @@
-[{"title": "Harry potter 1", "author": "J.K. Rowling", "year": "1995", "genre": "Fantasy", "read": true}, {"title": "Harry Potter 2", "author": "JK Rowling", "year": "2000", "genre": "fantastic", "read": true}, {"title": "test", "author": "coucu", "year": "12", "genre": "fantastic", "read": true}]
+
